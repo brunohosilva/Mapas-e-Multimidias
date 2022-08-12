@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginEnd="20dp"
+    android:orientation="vertical"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+
+    <Button
+        android:id="@+id/recuperando_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/recuperando_fotos_com_imageview" />
+
+    <Button
+        android:id="@+id/map_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/utilizando_mapas_mapview" />
+
+    <Button
+        android:id="@+id/localizacao_usuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/localiza_usuario_com_location_api" />
+
+    <Button
+        android:id="@+id/rotas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/rotas" />
+
+    <Button
+        android:id="@+id/pontos_interesses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pontos_interesse" />
+
+    <Button
+        android:id="@+id/webview_use"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/usando_webview_em_seus_apps" />
+
+    <Button
+        android:id="@+id/sons_audio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sons_audio_manager" />
+
+    <Button
+        android:id="@+id/videos_media_player"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/videos_mediaplayer" />
+
+    <Button
+        android:id="@+id/animacao_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/anima_o_em_views_com_views_animtation" />
+</LinearLayout>
+
+
+
