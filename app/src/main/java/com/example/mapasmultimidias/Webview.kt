@@ -18,10 +18,10 @@ class Webview : AppCompatActivity() {
             // configuracao do carregamento da pagina na webview
             override fun shouldOverrideUrlLoading(
                 view: WebView?,
-                url: String?
+                request: WebResourceRequest?
             ): Boolean {
-                if(url != null) {
-                    view?.loadUrl(url)
+                if(request?.url != null) {
+                    view?.loadUrl(request.url.toString())
                 }
                 return true
             }
@@ -29,6 +29,6 @@ class Webview : AppCompatActivity() {
         // habilta o javascript da webview
         id_webview.settings.javaScriptEnabled = true
         // url a ser carregada
-        id_webview.loadUrl("http://www.google.com.br/")
+        id_webview.loadUrl("https://www.fiap.com.br/")
     }
 }
