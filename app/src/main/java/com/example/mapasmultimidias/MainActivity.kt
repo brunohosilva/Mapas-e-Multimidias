@@ -21,6 +21,10 @@ class MainActivity : AppCompatActivity() {
         sons_audio.setOnClickListener(){
             acessarAudio()
         }
+
+        videos_media_player.setOnClickListener(){
+            acessarVideoMediaPlayer()
+        }
     }
 
     fun acessarFoto() {
@@ -35,6 +39,11 @@ class MainActivity : AppCompatActivity() {
 
     fun acessarAudio() {
         val intent = Intent(this, SonsAudio::class.java)
+        startActivity(intent)
+    }
+
+    fun acessarVideoMediaPlayer() {
+        val intent = Intent(this, VideoMediaPlayer::class.java)
         startActivity(intent)
     }
 }

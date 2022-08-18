@@ -16,4 +16,8 @@
     <string name="toque_na_imagem_do_animal">Toque na imagem do animal</string>
     <string name="dog">dog</string>
     <string name="cow">cow</string>
+    <string name="pausa_btn">pausa_btn</string>
+    <string name="upload_button">upload_button</string>
+    <string name="play_button">play_button</string>
+    <string name="stop_button">stop_button</string>
 </resources>
