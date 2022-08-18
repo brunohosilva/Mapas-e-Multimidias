@@ -16,22 +16,29 @@ class VideoMediaPlayer : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_video_media_player)
 
+        // variavel que recebe os dados de controles de media
         val mediaController = MediaController(this)
+
+        // indicando qual compoenente ira receber os controles
         mediaController.setAnchorView(vv)
 
         val uriPath = "https://archive.org/download/WildlifeSampleVideo/Wildlife.mp4"
 
         uri = Uri.parse(uriPath)
 
+        // listener que observa quando vídeo completa
         vv!!.setOnCompletionListener {
             if (isContinuosly) {
                 vv!!.start()
             }
         }
 
-        btn_stop!!.setOnClickListener { vv!!.pause() }
-        btn_play.setOnClickListener { vv!!.start() }
 
+        // botao pausar
+        btn_stop!!.setOnClickListener { vv!!.pause() }
+        //botao de play
+        btn_play.setOnClickListener { vv!!.start() }
+        // botão que pausa o loop do vídeo
         btn_upload!!.setOnClickListener {
             isContinuosly = false
             progress!!.visibility = View.VISIBLE
@@ -41,6 +48,7 @@ class VideoMediaPlayer : AppCompatActivity() {
             vv!!.start()
         }
 
+        // botao quee reinicia o video
         btn_continuar!!.setOnClickListener {
             isContinuosly = true
             progress!!.visibility = View.VISIBLE
@@ -50,6 +58,7 @@ class VideoMediaPlayer : AppCompatActivity() {
             vv!!.start()
         }
 
+        // listener que disparar um evento quando o vídeo está pronto
         vv!!.setOnPreparedListener { progress!!.visibility = View.VISIBLE }
 
     }

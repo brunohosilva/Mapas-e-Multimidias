@@ -9,6 +9,7 @@ import kotlinx.android.synthetic.main.activity_animation.*
 
 class Animation : AppCompatActivity() {
 
+    // Declarado array com os nomes de efeitos
     internal var animations = arrayOf(
         "Fade In",
         "Fade Out",
@@ -22,6 +23,8 @@ class Animation : AppCompatActivity() {
         "Bounce"
     )
 
+
+    // declarado um array com os arquivos de efeito
     internal var animationIDs = intArrayOf(
         R.anim.fade_in,
         R.anim.fade_out,
@@ -39,12 +42,12 @@ class Animation : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_animation)
 
-        // colocar itens na lista
+        // seta itens de animacoes na lista
         lv.adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, animations)
 
-        // ação de clique dentro dos itens da lista
+        // click de cada evento de animacao
         lv.onItemClickListener = AdapterView.OnItemClickListener { _, _, position, _ ->
-            // transformar os XML em Animation, pega a animationIDs de cada item da posição
+            // transformar os XML em Animations
             val animation = AnimationUtils.loadAnimation(this, animationIDs[position])
             // executa a animação
             tv.startAnimation(animation)

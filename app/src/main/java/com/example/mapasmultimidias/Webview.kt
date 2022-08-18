@@ -15,6 +15,7 @@ class Webview : AppCompatActivity() {
         setContentView(R.layout.activity_webview)
 
         id_webview.webViewClient = object : WebViewClient() {
+            // configuracao do carregamento da pagina na webview
             override fun shouldOverrideUrlLoading(
                 view: WebView?,
                 url: String?
@@ -25,8 +26,9 @@ class Webview : AppCompatActivity() {
                 return true
             }
         }
-
-        id_webview.settings.javaScriptEnabled
+        // habilta o javascript da webview
+        id_webview.settings.javaScriptEnabled = true
+        // url a ser carregada
         id_webview.loadUrl("http://www.google.com.br/")
     }
 }
