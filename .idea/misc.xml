@@ -5,6 +5,8 @@
       <map>
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.18614130434782608" />
         <entry key="app/src/main/res/layout/activity_recupera_foto.xml" value="0.18614130434782608" />
+        <entry key="app/src/main/res/layout/activity_sons_audio.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_webview.xml" value="0.18614130434782608" />
         <entry key="app/src/main/res/layout/recupera_foto.xml" value="0.18614130434782608" />
       </map>
     </option>

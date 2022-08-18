@@ -13,4 +13,7 @@
     <string name="uma_imagem_aqui">UMA IMAGEM AQUI</string>
     <string name="textview1">TextView</string>
     <string name="textview2">TextView2</string>
+    <string name="toque_na_imagem_do_animal">Toque na imagem do animal</string>
+    <string name="dog">dog</string>
+    <string name="cow">cow</string>
 </resources>

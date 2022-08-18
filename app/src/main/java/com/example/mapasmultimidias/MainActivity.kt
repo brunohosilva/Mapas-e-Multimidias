@@ -13,10 +13,28 @@ class MainActivity : AppCompatActivity() {
         recuperando_img.setOnClickListener(){
             acessarFoto()
         }
+
+        webview_use.setOnClickListener(){
+            acessarwebView()
+        }
+
+        sons_audio.setOnClickListener(){
+            acessarAudio()
+        }
     }
 
     fun acessarFoto() {
         val intent = Intent(this, RecuperaFoto::class.java)
+        startActivity(intent)
+    }
+
+    fun acessarwebView() {
+        val intent = Intent(this, Webview::class.java)
+        startActivity(intent)
+    }
+
+    fun acessarAudio() {
+        val intent = Intent(this, SonsAudio::class.java)
         startActivity(intent)
     }
 }

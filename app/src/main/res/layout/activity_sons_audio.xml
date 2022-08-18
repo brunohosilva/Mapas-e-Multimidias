@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20sp"
+    android:textAlignment="center">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/toque_na_imagem_do_animal"
+        android:textAlignment="center"
+        android:textSize="34sp" />
+
+    <ImageView
+        android:onClick="soundCow"
+        android:id="@+id/cow_iamge"
+        android:layout_width="241dp"
+        android:layout_height="215dp"
+        android:contentDescription="@string/cow"
+        app:srcCompat="@drawable/cow_image" />
+
+    <ImageView
+        android:onClick="soundDog"
+        android:id="@+id/dog_image"
+        android:layout_width="241dp"
+        android:layout_height="241dp"
+        android:contentDescription="@string/dog"
+        app:srcCompat="@drawable/dog_imagem" />
+
+</LinearLayout>
