@@ -20,4 +20,5 @@
     <string name="upload_button">upload_button</string>
     <string name="play_button">play_button</string>
     <string name="stop_button">stop_button</string>
+    <string name="fiap_sp">FIAP SP</string>
 </resources>

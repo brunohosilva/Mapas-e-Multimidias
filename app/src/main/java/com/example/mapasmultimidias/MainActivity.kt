@@ -25,6 +25,10 @@ class MainActivity : AppCompatActivity() {
         videos_media_player.setOnClickListener(){
             acessarVideoMediaPlayer()
         }
+
+        animacao_view.setOnClickListener(){
+            acessarAnimacao()
+        }
     }
 
     fun acessarFoto() {
@@ -44,6 +48,11 @@ class MainActivity : AppCompatActivity() {
 
     fun acessarVideoMediaPlayer() {
         val intent = Intent(this, VideoMediaPlayer::class.java)
+        startActivity(intent)
+    }
+
+    fun acessarAnimacao(){
+        val intent = Intent(this, Animation::class.java)
         startActivity(intent)
     }
 }

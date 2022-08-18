@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MapasMultimidias">
         <activity
+            android:name=".Animation"
+            android:exported="false" />
+        <activity
             android:name=".VideoMediaPlayer"
             android:exported="false" />
         <activity
