@@ -5,11 +5,11 @@ version name: 1
 # Introdução
 Aplicativo de estudo para Kotlin
 <br>
-O projeto tem foco em apresentar algumas ferramentas utilizando multimidias nativas em aplicações Android
+O projeto tem foco em apresentar algumas ferramentas utilizando Multimídias nativas em aplicações Android
 <br>
 
 # Imagem 1 
-## Tela inicial com as opções de medias.
+## Tela inicial com as opções de Multimídias.
 <img width="300" src="https://user-images.githubusercontent.com/37597313/185462592-9a82da05-dfd6-42da-b421-dc52204ae136.png">
 
 # Imagem 2
